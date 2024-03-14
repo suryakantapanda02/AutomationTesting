@@ -1,0 +1,146 @@
+What is Python?
+
+Application
+
+Fronetend Language:- HTML,CSS,Bootstrap,Jquery,JS
+Backend Language  :- Functionality/Logic(Fronetend), Connect with database and send the information to fronetend:- Python
+Database Language :- SQL,MySql,PgSql,Sqlite3, MongoDB (Data strore)
+
+
+Python is Backend Laguage.
+
+
+Why Python?
+
+1. Application Backend Development
+2. Datascience and Data analysis application
+3. AI
+4. Machine Learning and deep learing.
+5. Automation Testing
+
+
+
+Language Fundamentals:- 
+----------------------
+
+Introdction :-
+
+1. Python is general purpose of high level programming laguage.
+    
+
+    > There are 3 types of programming laguage are avilable in IT.
+
+
+          > Low Level Programming
+          > Middum Level Programming
+          > Hight Level Programming
+
+ 2.Python was developed by Guido Van Rossam in 1989, while working at National Research Insititute at Netherlands.
+
+		> Python is mix of two language(Perl,C++)
+
+3. 1991 Feb 20th python was officially lunched.
+
+
+4. Python is scripting laguage, It's very easy to undestand for anyone.
+
+
+Comparision:-
+-------------
+
+print:- Hello AT-4
+
+java:-
+
+public class Hello
+{
+	p s v main([String []  args])
+
+	{
+		SOP("Hello AT-4")
+
+	}
+}
+
+
+C:-
+---
+
+#include<stdio.h>
+void main()
+{
+	print("Hello AT-4")
+}
+
+
+Python:-
+-------
+
+print("Hello AT-4")
+
+
+Where we can use python:-
+------------------------
+
+1. For Developing Desktop appllication
+2. For Developing Web application
+3. Fro Developing Database application
+4. For Network Programming.
+5. For developing games
+6. For Data Anaysis application
+7. For machine and deep learning
+8. For Developing AT application
+9. For IOT(Internet of things)
+
+
+
+Limitation Python:-
+-------------------
+
+1. mobile application develeopment or mobile software.
+2. Banking application.
+
+
+
+
+Features Of Python:-
+------------------
+
+1. Simple and Easy to Learn:- 
+
+2. Freeware and Opensource:-
+
+3. High Level Programming Laguage:-
+
+4. Platform Independent:- PVM(Python Virtual Machine)
+
+5. Portability:-
+
+6. Dynamically Typed:-
+
+
+	variable = data(data type)-- statically
+	var = data --- automatically detect the type of data.
+
+	ex:- >>> a = 10
+	>>> type(a)
+	<class 'int'>
+
+
+	Name(v) = 'Chandra Sekhar'(data)
+	Age(v) = 25(data)
+
+
+7.Both Procedure Oriented and Object Oriented.
+
+8.Interpreted:-
+
+9.Extensive Library:-
+
+
+Python Version:-
+
+Python 1.0V introduced in Jan 1994
+Python 2.0V introduced in Oct 2000
+Python 3.0V introduced in Dec 2008
+

@@ -1,0 +1,86 @@
+#--------------------------------------------------------
+# List inside a list
+# li =[
+#         [2,4,6,10,12],
+#         [3,6,9,12,15],
+#         [4,8,12,16,20]
+#     ]
+#
+# #Nested for in Nested list
+#
+# for var in li:
+#     for var2 in var:
+#         print(var2)
+
+
+
+# li = [
+#     (78,90,56),
+#     (90,92,95),
+#     (67,89,45),
+#     (),()
+# ]
+#
+# for var in li:#(90,92,95)
+#     for var2 in var:#95
+#         print(var2)
+#
+
+
+#2.list inside a dictionary
+# li = [
+#     {'Name':'Ruchira','Age':27,'Salary':92000},
+#     {'Name':'Umesh','Age':29,'Salary':98000},
+#     {'Name':'Gupta','Age':26,'Salary':140000}
+# ]
+#
+# for jaga in li: #i={'Name':'Gupta','Age':26,'Salary':140000}
+#     for k,v in jaga.items():
+#         print(k,v)
+
+##dictionary inside a dictionary
+# li = {
+#         1:{'Name':'Ruchira','Age':27,'Salary':92000},
+#         2:{'Name':'Umesh','Age':29,'Salary':98000},
+#        3: {'Name':'Gupta','Age':26,'Salary':140000}
+#
+# }
+#
+# for k,v in li.items():
+#     for k1,v1 in v.items():
+#         print(k1,v1)
+
+
+# List inside a list
+#list inside a dictionary
+#dictionary inside a dictionary
+
+
+#---------------------------------------------------------------------------
+
+# li_1 = [1,2,3,4,5]
+# li_2  = [1,6,3,9,5]
+#
+# result = [1,8,3]
+# #output :- [1,8,3,13,5]
+#
+# for i in range(len(li_1)): #range(5) -- 0,4  i = 4
+#     if len(li_1) == len(li_2):
+#         if li_1[i] != li_2[i]: #li_1[1] != li_2[1]
+#             result.append(li_1[i]+li_2[i])
+#         else:
+#             result.append(li_1[i])
+# print(result)
+
+# li_1 = [10,'Sankrit','Biology',20]
+# li_2 = [20,'google','apple','30']
+
+# output = [30,'Sankritgoogle','Biologyapple']
+
+# result = []
+# for i in range(len(li_1)):
+#     if len(li_1) == len(li_2):
+#         if type(li_1[i]) == type(li_2[i]):
+#             result.append(li_1[i]+li_2[i])
+#
+# print(result)

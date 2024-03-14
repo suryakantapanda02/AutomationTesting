@@ -1,0 +1,299 @@
+
+Set:-
+
+A set is a collecition where insertion not follwed by collection, indexing not matter and duplicate data also not allowed, it's enclosed {} bracket, then we should go for set.
+
+1.Insertion Order is Not Preseved
+2.Hetrogenious objects are allowed
+3.Duplicates are Not allowed
+4.It's a mutable data type.
+5.Elements are enclode in {}  bracket.
+6.Every elemnet separate with anothere element with the help of comma(,).
+
+
+>>> 
+>>> se = {10,78,9+8j,'QWERTy',(78,45),10,10,78,78}
+>>> type(se)
+<class 'set'>
+>>> se
+{(9+8j), 'QWERTy', 10, (78, 45), 78}
+>>> 
+>>> dir(se)
+[, 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
+>>> 
+
+>>> #add():- Add an element to the set
+>>> 
+>>> se ={78,45,'iyi',80}
+>>> se.add('biswa')
+>>> se
+{'iyi', 45, 'biswa', 78, 80}
+>>> 
+>>> #clear():- Remove all the element from the set
+>>> se ={78,45,'iyi',80}
+>>> se.clear()
+>>> se
+set()
+>>> 
+>>> 
+>>> #copy():- Copy one variable to another variable.
+>>> se ={78,45,'iyi',80}
+>>> tq = se.copy()
+>>> tq
+{80, 45, 'iyi', 78}
+>>> 
+>>> 
+>>> #difference:- Return a set that contains the item that only exits in the set.
+>>> a = {1,2,3,4,5}
+>>> b = {4,5,6,7,8}
+>>> a.difference(b)
+{1, 2, 3}
+>>> b.difference(a)
+{8, 6, 7}
+>>> 
+>>> 
+>>> #intersection:- Return a set, That is the intersection(commaon area) of the two set.
+>>> a = {1,2,3,4,5}
+>>> b = {4,5,6,7,8}
+>>> a.intersection(b)
+{4, 5}
+>>> 
+>>> 
+>>> #discard():- Remove any element from the set
+>>> se ={78,45,'iyi',80}
+>>> se.discard(45)
+>>> se
+{80, 'iyi', 78}
+>>> #remove == discard
+>>> se ={78,45,'iyi',80}
+>>> se.remove(45)
+>>> se
+{80, 'iyi', 78}
+>>> 
+>>> #pop:- Remove the element from the set, but as per his wish
+>>> se ={78,45,'iyi',80}
+>>> se.pop()
+80
+>>> 
+>>> 
+>>> #union:- Return the set containing union(two set in one) of both the set.
+>>> 
+>>> a = {1,2,3,4,5}
+>>> b = {4,5,6,7,8}
+>>> a.union(b)
+{1, 2, 3, 4, 5, 6, 7, 8}
+>>> 
+>>> 
+>>> #update:- add a set into a anothers set.
+>>> 
+>>> name = {'Akshya','Rupesh','Kanha'}
+>>> age = {45,89,67}
+>>> name.update(age)
+>>> name
+{'Kanha', 67, 89, 'Akshya', 'Rupesh', 45}
+>>> 
+
+Type Casting:-
+------------
+we can covert one data type to another datatype, this we will use type casting.
+
+1.int()
+2.float()
+3.complex()
+4.bool()
+4.str()
+
+>>> a = 1
+>>> type(a)
+<class 'int'>
+>>> float(a)
+1.0
+>>> complex(a)
+(1+0j)
+>>> bool(a)
+True
+>>> str(a)
+'1'
+>>> 
+
+
+
+Frozenset:-
+It's exactly same as set except that it is immutable.
+For Frozenset no symbol is there, we can create a frozen set the help type casting(list,tuple,set)
+
+>>> li = [89,90,78]
+>>> fz = frozenset(li)
+>>> fz
+frozenset({89, 90, 78})
+>>> type(fz)
+<class 'frozenset'>
+
+bytes:- It's a immutable datatype, we can create a bytes using help of type casting, but condition here is it's only accept 0 to 255 values.
+
+>>> li = [78,56,123,255,78]
+>>> by = bytes(li)
+>>> type(by)
+<class 'bytes'>
+
+Note:- If a put above 255, it's showing ValueError.
+
+>>> li = [78,56,123,256,78]
+>>> by = bytes(li)
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    by = bytes(li)
+ValueError: bytes must be in range(0, 256)
+
+
+bytearryy:- It's a mutable datatype, we can create a bytearray using help of type casting, but condition here is it's only accept 0 to 255 values.
+
+>>> li = [78,56,123,255,78,
+>>> byts = bytearray(li)
+>>> byts
+bytearray(b'N8{\xffN')
+>>> type(byts)
+<class 'bytearray'>
+
+
+Note:- If a put above 255, it's showing ValueError.
+
+>>> li = [78,56,123,256,78]
+>>> byts = bytearray(li)
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    byts = bytearray(li)
+ValueError: byte must be in range(0, 256)
+>>> 
+
+
+range:- Now we hold this one, we will continuw after flow control(for loop).
+
+
+                           
+
+                                 
+                                 Dictionary(dict())
+                                 -----------------
+
+
+if we want to represent a group of values as key-alues pairs then we should go for dictionary.
+
+>> Dictionary keys are not allowed duplicates data, but values are allowed duplicasy. If we are trying to insert duplicate key it's showing either error or new key inserted.
+
+
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR'}
+>>> type(d)
+<class 'dict'>
+>>> d1 = {'Name':'Raza','Age':28,'Address':'BBSR','Post':'Salepur'}
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,m
+
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR'}
+>>> dir(d)
+['clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+
+
+clear:- remove all the key, value pair from the dictionary.
+
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR'}
+>>> d.clear()
+>>> d
+{} :- empty {} means always dictionary, not set
+>>> 
+
+Methods:-
+
+'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+
+>>> #clear:- create a empty dictionary
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.clear()
+>>> d
+{}
+>>> #copy:- copy one variable data to another one
+>>> d = {'Name':'Krishna','Age':25}
+>>> b = d.copy()
+>>> b
+{'Name': 'Krishna', 'Age': 25}
+>>> type(b)
+<class 'dict'>
+>>> 
+>>> #get :- call the key and it's return the values
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.get('Name')
+'Krishna'
+>>> d.get('Age')
+25
+>>> 
+>>> #items:- Return a tuple pair of key and value
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.items()
+dict_items([('Name', 'Krishna'), ('Age', 25)])
+>>> 
+>>> 
+>>> #keys:- Return only key of the dictionary
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.keys()
+dict_keys(['Name', 'Age'])
+>>> 
+>>> 
+>>> #values :- Return only values of the dictionary
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.values()
+dict_values(['Krishna', 25])
+>>> 
+>>> 
+>>> #fromkeys:- 
+>>> li = ['Aman','Chimany','Dhal','Kapoor']
+>>> math_marks = 86
+>>> 
+>>> new_dictionary = dict.fromkeys(li,math_marks)
+>>> new_dictionary
+{'Aman': 86, 'Chimany': 86, 'Dhal': 86, 'Kapoor': 86}
+>>> 
+>>> 
+>>> 
+>>> #pop():- delete the key-value pair using help of key.
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR','Post':'Khandagiri'}
+>>> d.pop('Address')
+'BBSR'
+>>> d
+{'Name': 'Krishna', 'Age': 25, 'Post': 'Khandagiri'}
+>>> 
+>>> 
+>>> #popitem():- delete the key-value pair ramdomly.
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR','Post':'Khandagiri'}
+>>> d.popitem()
+('Post', 'Khandagiri')
+>>> d
+{'Name': 'Krishna', 'Age': 25, 'Address': 'BBSR'}
+>>> 
+>>> 
+>>> #setdefault:- add a new key-value in dictionary.
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.setdefault('Address','BBSR')
+'BBSR'
+>>> d
+{'Name': 'Krishna', 'Age': 25, 'Address': 'BBSR'}
+>>> '
+SyntaxError: EOL while scanning string literal
+>>> 
+>>> #update:- Update the dictionary or add one to more key-value pair in dictionary
+>>> 
+>>> d = {'Name':'Krishna','Age':25}
+
+>>> d.update({'Address':'BBSR','Post':'Khandagiri','Ph_no':9876543334})
+>>> d
+{'Name': 'Krishna', 'Age': 25, 'Address': 'BBSR', 'Post': 'Khandagiri', 'Ph_no': 9876543334}
+>>> 
+
+
+
+None:- If a function or class doing nothing then it's return None.
+
+def f1():
+    a = 10
+
+print(f1())
+

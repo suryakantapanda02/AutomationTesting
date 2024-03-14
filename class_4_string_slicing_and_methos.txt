@@ -1,0 +1,338 @@
+Important Datatype:-  String, List and Dictionary
+
+
+String:-str()
+---------
+
+A String is a sequence of characters enclosed in single quote('') or double quotes("") 
+
+
+>>> s = 'TRDGHCJHFGgjgjgujgugu43564647!@$^&*()[:"   '
+>>> type(s)
+<class 'str'>
+>>> s = '786785764'
+>>> type(s)
+<class 'str'>
+>>> s = '&^%^$&^&*'
+>>> type(s)
+<class 'str'>
+>>> s = ' '
+>>> type(s)
+<class 'str'>
+>>> s = ''
+>>> type(s)
+<class 'str'>
+>>> 
+>>> s = "TRDGHCJHFGgjgjgujgugu43564647!@$^&*()[:   "
+>>> type(s)
+<class 'str'>
+>>> s = ""
+>>> type(s)
+<class 'str'>
+>>> 
+
+
+Triple Quote:- It's represent as a documentation of string (doc_string)
+
+2types of triple quote
+
+1.Singe Triple quote = ''' '''
+2.Double Triple Quoets = """  """
+
+
+Reason :-
+
+1.Reson of writen Function or Class.
+
+def cal_make():
+	''' This function is use for calculater Purpose'''
+	""" This function is use for calculater Purpose"""
+
+
+2. Multile Comment:-
+
+'''file = open("C:\\Users\\chand\\OneDrive\\Documents\\questions.txt", "r")
+data = file.read()
+print(data)
+w = data.split()
+print(len(w))'''
+
+
+Slicing Of a String:-
+-------------------
+When we slicce a sub string into a string this time we call string slicing.
+
+Rule:-
+----
+Python is a zero base index system
+Left to Right positive index:- starts from 0
+Right to Left Negetive index :- starts from -1
+
+Square bracket([]) use for opeartor of slicing.
+
+Syntax:-
+
+Variable[start:end+1:steps] 
+
+single quote
+double quote 
+triple quote
+
+string :- it's a collection char which is enclosed in single ,double or triple quote
+
+char :- Upper case, lower case, special char, digits
+
+
+Name = 'Ankit Pradhan'
+
+#string slicing
+
+slice means peace
+[]- squre bracket is a operater, which can used to retrive parts of string
+ 
+ -13   -12   -11 -10  -9  -8  -7   -6    -5     -4     -3    -2    -1      (Negetive)                                                                                                                                                      
+  A     n    k   i    t       P     r    a       d     h      a    n
+
+
+  0     1    2   3    4   5   6     7    8       9     10     11   12 (positive)
+
+
+  Zero base index(position) :- Python counting starts with Zero only.
+ 
+  postive index :- left to right
+  negetive index :- right to left
+
+
+  A - 0  and -13 
+  n -  12 and -1
+  t -  4  and -9
+Name = 'Ankit Pradhan'
+
+ -13   -12   -11 -10  -9  -8  -7   -6    -5     -4     -3    -2    -1      (Negetive)                                                                                                                                                      
+  A     n    k   i    t       P     r    a       d     h      a    n
+
+
+  0     1    2   3    4   5   6     7    8       9     10     11   12 (positive)
+
+
+  Syntax:-
+
+
+  variable[start_index : end_index+1 : step]
+
+  >>> s = 'Ankit Pradhan'
+>>> s[0:5:1]
+
+'Ankit'
+>>> s[6:::1]
+SyntaxError: invalid syntax
+>>> s[6::1]
+'Pradhan'
+>>> s[6::]
+'Pradhan'
+>>> s[2:5]
+'kit'
+>>> s[0::2]
+'AktPahn'
+>>> s[-13:-8]
+'Ankit'
+>>> s[-7:]
+'Pradhan'
+>>> s[-13::2]
+'AktPahn'
+>>> 
+>>> Name = 'Chandra Sekhar'
+>>> DOB = '17/3/1997'
+>>> password = Name[0:4]+DOB[-4:]
+>>> password
+'Chan1997'
+>>> 
+
+>>> bank = 'State Bank Of INDIA'
+>>> code = '100927'
+>>> ifsc = bank[0]+bank[6]+bank[-5:-3]+code
+>>> ifsc
+'SBIN100927'
+>>> 
+
+--------------
+using dir() we know the data's methods.
+
+>>> s = "bengaluru"
+>>> dir(s)
+['capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> s.capitalize()
+
+Link :- https://www.w3schools.com/python/python_ref_string.asp :- string Method ka all info
+
+How to use methods
+--------------
+
+using dot(.) format, we will use all data type methods.
+
+>>> s = "bengaluru"
+>>> s.capitalize()
+'Bengaluru
+
+if methods not avialabe in data
+
+>>> s.jhgyuh()
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    s.jhgyuh()
+AttributeError: 'str' object has no attribute 'jhgyuh'
+>>> 
+
+
+Important:-
+
+1. capitalize():- Convert Upper case the first char of string.
+
+>>> s = "bengaluru"
+>>> s.capitalize()
+'Bengaluru'
+
+
+2. lower():- If in your string any char is in upper, it's ,convert to lower.
+
+>> s = "Harishnakar"
+>>> s.lower()
+'harishnakar'
+>>> 
+
+3. upper():- If in your string any char is in lower, it's ,convert to upper.
+
+>>> s = "Harishnakar"
+>>> s.upper()
+'HARISHNAKAR'
+>>> 
+
+4.swapcase():- Vice-Versa upper to lower and lower to upper.
+
+>>> s = 'Abhay Is a Good Boy'
+>>> s.swapcase()
+'aBHAY iS A gOOD bOY'
+
+
+5. endswith():- Return True if the string end with spcified value.
+
+>>> Ip = '192.168.0.0'
+>>> Ip.endswith('0')
+True
+>>> Ip.endswith('9')
+False
+
+
+6. startswith():- Return True if the string start with spcified value.
+
+>>> Ip = '192.168.0.0'
+>>> Ip.startswith('1')
+True
+>>> Ip.startswith('2')
+False
+>>> 
+
+
+7.replace():-
+
+>>> s = 'Ji'
+>>> s.replace('J','H')
+'Hi'
+>>> s = 'Ji Jolly'
+>>> s.replace('J','H')
+'Hi Holly'
+>>> s.replace('Ji','Hi')
+'Hi Jolly'
+
+8.find():-It's search the position of sub string in a string. If any sub string is not there it's return the -1.
+
+>>> s = 'Hi Everyone'
+>>> s.find('i')
+1
+>>> s.find('E')
+3
+>>> s.index('i')
+1
+>>> s.index('E')
+3
+>>> s.index('e')
+5
+>>> s = 'Hi Everyone how are you'
+>>> s.index('e')
+5
+>>> s.index('e ')
+10
+>>> s.index('e y')
+18
+>>> 
+>>> s = '10.99.10.1'
+>>> len(s)
+10
+>>> s.find('1')
+0
+>>> s.find('9')
+3
+>>> s.find('0')
+1
+>>> s.find('0.1')
+7
+>>> s.find('9.')
+4
+>>> s.index('9.')
+4
+>>> s.find('z')
+-1
+>>> s.index('z')
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    s.index('z')
+ValueError: substring not found
+
+6.index():- It's search the position of sub string in a string. If any sub string is not there it's return the Error.
+
+>>> S.index('Z')
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    S.index('Z')
+ValueError: substring not found
+
+
+10.strip():-It's remove unnessary white space right and left side from the string
+
+>>> s = '   Monaj'
+>>> s.strip()
+'Monaj'
+>>> s = '   Monaj                '
+>>> s.strip()
+'Monaj'
+>>> 
+
+11.split():- The split() method split the string into substring , it it's find common seprater
+
+>>> Name = 'Anwesha Monaj Shardha Debi Rajesh Silan Subrat Bharat'
+>>> Name.split(' ')
+['Anwesha', 'Monaj', 'Shardha', 'Debi', 'Rajesh', 'Silan', 'Subrat', 'Bharat']
+
+12.join():- join the substring from list and convert into a complete string
+
+>>> Name = ['Chandra','Sekhar','Nayak']
+>>> '-'.join(Name)
+'Chandra-Sekhar-Nayak'
+>>> '/'.join(Name)
+'Chandra/Sekhar/Nayak'
+>>> ' '.join(Name)
+'Chandra Sekhar Nayak'
+>>> ''.join(Name)
+'ChandraSekharNayak'
+>>> 
+
+13.format():-The format is a method which is useing placeholder, where you need a add new substring
+
+>>> Name = 'Anwesha{}Monaj{}Shardha{}Debi{}Rajesh{}Silan{}Subrat{}Bharat'.format(' ',' ',' ',' ',' ',' ',' ')
+>>> Name
+'Anwesha Monaj Shardha Debi Rajesh Silan Subrat Bharat'
+>>> Name.split(' ')
+['Anwesha', 'Monaj', 'Shardha', 'Debi', 'Rajesh', 'Silan', 'Subrat', 'Bharat']
+>>> Name = 'Anwesha{}Monaj{}Shardha{}Debi{}Rajesh{}Silan{}Subrat{}Bharat'.format('-','-','-','-','-','-','-',)
+>>> Name
+'Anwesha-Monaj-Shardha-Debi-Rajesh-Silan-Subrat-Bharat'

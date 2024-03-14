@@ -1,0 +1,73 @@
+while loops:-
+-------------
+
+if we want to execute a group statements iteratively until some condtion false, then we should ngo for while loop.
+
+while condition:
+	body/statements/expression
+
+1.To print 1 to 10:
+
+x = 1
+while x<=10:
+    print(x)
+    x = x+1
+
+ 2. To print nth no of mul
+
+n = int(input('Enter you number:-'))
+x = 1
+sum = 1
+while x<=n:
+    sum = sum*x
+    x = x+1
+print(sum)
+
+3.Infinity Loop
+
+i = 0
+while True:
+    i = i+1
+    print('hello',i)
+
+-----------------------------------------Running Notes
+
+
+print 1 to 10 use in while loop
+
+
+# num = 1
+#
+# while num<=10:
+#     print(num)
+#     num = num+1
+
+
+# print reverse a number without str function
+
+# num = 1234
+# reverse_num = 0 #4321
+# while num >0:
+#     last_digit = num%10 # 2
+#     reverse_num = (reverse_num*10)+last_digit
+#     num = num//10
+# print(reverse_num)
+
+
+# print(1234//10)
+
+# print even number with help of while in python 1 to 20.r
+# num = 1
+# while num >0 and num<=20:
+#     if num%2==0:
+#         print(num)
+#     num = num+1
+
+#print  div by 3and div by 5 , 1 to 30 help of while loop.
+
+# num = 1
+#
+# while num>0 and num<=30:
+#     if num%3==0 and num%5==0:
+#         print(num)
+#     num = num+1
